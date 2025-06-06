@@ -88,6 +88,24 @@ header nav ul li a.active { /* Class .active sẽ được JS thêm vào */
     border-bottom-color: #0056b3;
 }
 
+header nav ul li a.no-underline {
+    text-decoration: none !important; /* Loại bỏ gạch chân mặc định */
+}
+
+header nav ul li a.no-underline:hover {
+    text-decoration: none !important; /* Đảm bảo không có gạch chân khi hover */
+    /* Bạn vẫn có thể giữ lại hiệu ứng border-bottom khi hover nếu muốn */
+    /* color: #0056b3; */
+    /* border-bottom-color: #0056b3; */
+}
+
+/* Đảm bảo class .active chỉ có border-bottom */
+header nav ul li a.active {
+    color: #0056b3; /* Màu khi active */
+    border-bottom: 2px solid #0056b3; /* Gạch chân bằng border */
+    text-decoration: none !important; /* Quan trọng: Bỏ gạch chân mặc định khi active */
+}
+
 /* Hero Section (Giữ nguyên hoặc điều chỉnh) */
 .hero {
     background: #2c3e50 url('https://via.placeholder.com/1920x600?text=QREFM+Lab+Background') no-repeat center center/cover; /* Thêm ảnh nền ví dụ */
@@ -226,6 +244,15 @@ header nav ul li a.active { /* Class .active sẽ được JS thêm vào */
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
+
+#news-events .news-grid p { /* Nhắm cụ thể vào thẻ p bên trong .news-grid của section news-events */
+    text-align: center; /* Căn giữa nội dung văn bản của thẻ p */
+    width: 100%;       /* Đảm bảo thẻ p chiếm toàn bộ chiều rộng của .news-grid để việc căn giữa có tác dụng */
+    font-size: 1.2em;  /* Tùy chỉnh kích thước chữ nếu muốn */
+    color: #777;       /* Tùy chỉnh màu chữ nếu muốn */
+    padding: 40px 0;   /* Thêm khoảng đệm trên dưới cho đẹp hơn (tùy chọn) */
+}
+
 .news-item-card {
     background: #fff;
     border-radius: 8px;
