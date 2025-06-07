@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QREFM Lab - Quantitative Research in Economics and Financial Modeling</title>
     <link rel="stylesheet" href="style.css">
+    <!-- THÊM FONT AWESOME CHO SOCIAL ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- HEADER & NAVIGATION -->
     <header>
         <div class="container">
             <div class="logo">
-                <h1><a href="#hero-section">QREFM Lab</a></h1>
-                <p>Quantitative Research in Economics and Financial Modeling</p>
+                <a href="#hero-section">
+                    <img src="logo bản trắng.png" alt="QREFM Lab Logo">
+                </a>
             </div>
             <nav>
                 <ul>
@@ -40,17 +43,24 @@
         <section id="who-we-are" class="page-section">
             <div class="container">
                 <h2>Who We Are</h2>
-                <p>The Quantitative Resources for Economic and Financial Modeling (QREFM Lab) is a specialized unit in the research and 
-                    application of mathematical tools to build economic and financial models.</p>
-                <h3>Objectives and Mission</h3>
-                <ul>
-                    <li>Build an internationally oriented research lab.</li>
-                    <li>Conduct academic research in Mathematical Economics and Mathematical Finance: reading scientific papers, attending and 
-                        writing for conferences and academic journals related to the field.</li>
-                    <li>Guide students/trainees in scientific research, implementing theoretical and applied research projects.</li>
-                    <li>Support students/trainees in participating in prestigious international competitions and applying for scholarships abroad.</li>
-                </ul>
-                <!-- You can add Team information here if you decide to later -->
+                <div class="section-intro-text">
+                    <p>The Quantitative Resources for Economic and Financial Modeling (QREFM Lab) is a specialized unit in the research and
+                        application of mathematical tools to build economic and financial models. We are dedicated to fostering innovation and guiding the next generation of researchers.</p>
+                    <hr class="decorative-line">
+                </div>
+
+                <div class="who-we-are-grid">
+                    <div class="who-we-are-image">
+                        <img src="demo1.jpg" alt="QREFM Lab in action">
+                    </div>
+                    <div class="who-we-are-content">
+                        <h3>Welcome to QREFM Lab</h3>
+                        <p class="tagline">Shaping the future of quantitative research.</p>
+                        <p>Our lab is committed to excellence. We strive to build an internationally oriented research environment, conduct cutting-edge academic research, and provide comprehensive guidance to students and trainees in implementing theoretical and applied research projects.</p>
+                        <p>Furthermore, we actively support our students in prestigious international competitions and in their applications for scholarships to study abroad, ensuring they have the resources and backing to achieve their full potential.</p>
+                        <a href="#contact" class="btn btn-secondary">Learn More About Us <span class="arrow">→</span></a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -59,14 +69,12 @@
             <div class="container">
                 <h2>Research Directions</h2>
                 <ul class="research-list">
-                    <li>Research on quantitative finance (pricing, hedging, trading).</li>
-                    <li>Research on mathematical models of market microstructure (market making, LOBs, mean-field games, etc.).</li>
-                    <li>Research on modern decision-making models and game theory.</li>
-                    <li>Research on macroeconomic models incorporating climate change, climate risk, and uncertainty.</li>
-                    <li>Application of machine learning tools to solve complex economic and financial models.</li>
-                    <li>Combining mathematical tools and economic theories to study problems in economics and business, focusing on market 
-                        efficiency, collective decision-making, as well as pricing policies, advertising, and optimal contract design for 
-                        enterprises.</li>
+                    <li>Quantitative Finance (Pricing, Hedging, Trading).</li>
+                    <li>Market Microstructure Modeling.</li>
+                    <li>Decision-Making Models & Game Theory.</li>
+                    <li>Macroeconomics: Climate Change & Risk.</li>
+                    <li>Machine Learning in Economic Models.</li>
+                    <li>Mathematical Economics: Efficiency, Pricing, Contracts.</li>
                 </ul>
             </div>
         </section>
@@ -76,7 +84,7 @@
             <div class="container">
                 <h2>News & Events</h2>
                 <div class="news-grid">
-                    <p>Updating...</p>
+                    <p>Updating...</p> <!-- Giữ nguyên dòng này -->
                 </div>
             </div>
         </section>
@@ -93,11 +101,58 @@
         </section>
     </main>
 
+    <!-- PRE-FOOTER / CALL TO ACTION SECTION -->
+    <section class="pre-footer-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h3>Advance Your Research with QREFM Lab</h3>
+                <p>Connect with us to explore collaborations and opportunities.</p>
+            </div>
+            <div class="cta-button">
+                <a href="#contact" class="btn btn-light">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer>
-        <div class="container">
-            <p>© <span id="currentYear"></span> QREFM Lab. All Rights Reserved.</p>
-            <p><a href="#hero-section" class="back-to-top">Back to Top ↑</a></p>
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-widget">
+                        <a href="#hero-section" class="footer-logo-link">
+                            <img src="logo xóa nền.png" alt="QREFM Lab Logo - White" class="footer-logo">
+                        </a>
+                        <p>QREFM Lab is dedicated to pioneering quantitative research in economics and financial modeling, fostering innovation and academic excellence.</p>
+                         <div class="social-icons">
+                            <a href="https://www.facebook.com/qrefmlab" target="_blank" aria-label="Facebook QREFM Lab"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://nct.neu.edu.vn/phong-nghien-cuu/qrefm-lab" target="_blank" aria-label="University Website"><i class="fas fa-university"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Key Research</h4>
+                        <ul>
+                            <li><a href="#research">Quantitative Finance</a></li>
+                            <li><a href="#research">Market Microstructure</a></li>
+                            <li><a href="#research">Game Theory</a></li>
+                            <li><a href="#research">Climate Economics</a></li>
+                            <li><a href="#research">Machine Learning</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget">
+                        <h4>Contact Us</h4>
+                        <p>R.1109, A1 Building, NEU<br>Hanoi, Vietnam</p>
+                        <p>Email: <a href="mailto:qrefm.lab@gmail.com">qrefm.lab@gmail.com</a></p>
+                    </div>
+                    <!-- BỎ PHẦN WIDGET CHO NEWSLETTER -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© <span id="currentYear"></span> QREFM Lab. All Rights Reserved.</p>
+                <p class="back-to-top-container"><a href="#hero-section" class="back-to-top">Back to Top ↑</a></p>
+            </div>
         </div>
     </footer>
 
@@ -109,10 +164,22 @@
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    const headerOffset = document.querySelector('header').offsetHeight || 70;
+                    let headerOffset = 86;
+                    const headerElement = document.querySelector('header');
+                    if (headerElement) {
+                        headerOffset = headerElement.offsetHeight;
+                    }
+
+                    if (window.innerWidth <= 768) {
+                         const mobileHeaderHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height-mobile')) || 121;
+                         headerOffset = mobileHeaderHeight;
+                    } else {
+                         const desktopHeaderHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height-desktop')) || 86;
+                         headerOffset = desktopHeaderHeight;
+                    }
+
                     const elementPosition = targetElement.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
                     window.scrollTo({
                          top: offsetPosition,
                          behavior: "smooth"
@@ -127,25 +194,35 @@
         // Active link highlighting on scroll
         const sections = document.querySelectorAll('section[id]');
         const navLi = document.querySelectorAll('header nav ul li a');
-
+        const headerElementForScroll = document.querySelector('header');
+        
         window.addEventListener('scroll', () => {
             let current = '';
+            let headerHeightForScrollCalculation = 86; 
+            if (headerElementForScroll) {
+                headerHeightForScrollCalculation = headerElementForScroll.offsetHeight;
+            }
+
             sections.forEach( section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                const headerHeight = document.querySelector('header').offsetHeight || 70;
-                if (pageYOffset >= (sectionTop - headerHeight - sectionHeight / 3 )) { // Adjusted offset for better accuracy
+                if (pageYOffset >= (sectionTop - headerHeightForScrollCalculation - 50)) { 
                     current = section.getAttribute('id');
                 }
             });
 
             navLi.forEach( a => {
                 a.classList.remove('active');
-                if(a.getAttribute('href').substring(1) === current) {
+                if(a.getAttribute('href') && a.getAttribute('href').substring(1) === current) {
                     a.classList.add('active');
                 }
             });
+            if (window.pageYOffset < sections[0].offsetTop - headerHeightForScrollCalculation - 50) {
+                navLi.forEach(a => a.classList.remove('active'));
+            }
         });
+
+        // BỎ SCRIPT CHO NEWSLETTER FORM
     </script>
 </body>
 </html>
