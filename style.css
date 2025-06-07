@@ -408,7 +408,7 @@ hr.decorative-line {
 #research .research-list li::before {
     content: '●'; /* Dấu tròn */
     color: var(--primary-color);
-    font-size: 0.8em; /* Kích thước cho dấu tròn */
+    font-size: 0.3em; /* Kích thước cho dấu tròn */
     position: absolute;
     left: 28px; /* Vị trí dấu tròn */
     top: 50%;
