@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QREFM Lab - Quantitative Research in Economics and Financial Modeling</title>
     <link rel="stylesheet" href="style.css">
-    <!-- THÊM FONT AWESOME CHO SOCIAL ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -14,7 +13,7 @@
         <div class="container">
             <div class="logo">
                 <a href="#hero-section">
-                    <img src="Logo bản trắng.png" alt="QREFM Lab Logo">
+                    <img src="images/Logo bản trắng.png" alt="QREFM Lab Logo">
                 </a>
             </div>
             <nav>
@@ -51,7 +50,7 @@
 
                 <div class="who-we-are-grid">
                     <div class="who-we-are-image">
-                        <img src="demo1.jpg" alt="QREFM Lab in action">
+                        <img src="images/demo1.jpg" alt="QREFM Lab in action">
                     </div>
                     <div class="who-we-are-content">
                         <h3>Welcome to QREFM Lab</h3>
@@ -69,12 +68,25 @@
             <div class="container">
                 <h2>Research Directions</h2>
                 <ul class="research-list">
-                    <li>Quantitative Finance: Pricing, Hedging,...</li>
-                    <li>Market Microstructure Modeling</li>
-                    <li>Decision-Making Models and Modern Game Theory</li>
-                    <li>Mechanism Design and Bayesian Persuasion</li>
-                    <li>Macroeconomics Incorporating Climate Change and Uncertainty</li>
-                    <li>Machine Learning in Complex Economics and Financial Models</li>
+                    <!-- QUAN TRỌNG: Thêm style="background-image: url('images/your-image.jpg');" cho mỗi li -->
+                    <li style="background-image: url('images/quant finance.png');">
+                        <span class="research-text">QUANTITATIVE FINANCE: PRICING, HEDGING,...</span>
+                    </li>
+                    <li style="background-image: url('images/market microstructure.png');">
+                        <span class="research-text">MARKET MICROSTRUCTURE MODELING</span>
+                    </li>
+                    <li style="background-image: url('images/game theory.jpeg');">
+                        <span class="research-text">DECISION-MAKING MODELS AND MODERN GAME THEORY</span>
+                    </li>
+                    <li style="background-image: url('images/mechanism design.png');">
+                        <span class="research-text">MECHANISM DESIGN AND BAYESIAN PERSUASION</span>
+                    </li>
+                    <li style="background-image: url('images/climate economics.avif');">
+                        <span class="research-text">MACROECONOMICS INCORPORATING CLIMATE CHANGE AND UNCERTAINTY</span>
+                    </li>
+                    <li style="background-image: url('images/neural network.avif');">
+                        <span class="research-text">MACHINE LEARNING IN COMPLEX ECONOMICS AND FINANCIAL MODELS</span>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -83,9 +95,46 @@
         <section id="news-events" class="page-section">
             <div class="container">
                 <h2>News & Events</h2>
-                <div class="news-grid">
-                    <p>Updating...</p> <!-- Giữ nguyên dòng này -->
-                </div>
+
+                <div class="news-events-layout">
+                    <!-- CỘT TRÁI: CHO CÁC TIN TỨC CHI TIẾT -->
+                    <div class="main-news-column">
+                        
+                        <article class="news-detail-item">
+                            <!-- BỎ PHẦN NEWS-ITEM-IMAGE -->
+                            <div class="news-item-content">
+                                </p>
+                                <h3 class="news-item-title">
+                                    <a href="year_summary.html">Summary of QREFM Lab's seminar series - first year of operation</a>
+                                </h3>
+                                <p class="news-item-excerpt">
+                                    In its first year, QREFM Lab organized eight seminars across core research areas, laying a strong foundation for future work in quantitative economics 
+                                    and financial modeling.
+                                </p>
+                                <a href="year_summary.html" class="btn-read-more">Read More <span class="arrow">→</span></a>
+                            </div>
+                        </article>
+
+                        <!-- Nếu không có bài nào khác, có thể để trống hoặc: -->
+                        <!-- <p>More news and event details will be updated here.</p> -->
+
+                    </div> <!-- Kết thúc .main-news-column -->
+
+                    <!-- CỘT PHẢI: SIDEBAR CHO BÀI VIẾT NỔI BẬT (TỔNG KẾT NĂM) -->
+                    <aside class="sidebar-news-column">
+                        <article class="featured-article-sidebar">
+                            <!-- BỎ PHẦN FEATURED-ARTICLE-IMAGE-CONTAINER -->
+                            <div class="featured-article-content">
+                                <h4>QREFM Lab Seminar Series</h4> <!-- Đổi tiêu đề này cho phù hợp -->
+                                <p>
+                                    QREFM Lab’s first-year seminar series showcased key research areas in quantitative economics and finance. View the detailed schedule.
+                                </p>
+                                <a href="seminar_series.html" class="btn btn-block">View Schedule</a> <!-- Đổi tên nút và link -->
+                            </div>
+                        </article>
+                    </aside>
+
+                </div> <!-- Kết thúc .news-events-layout -->
             </div>
         </section>
 
@@ -121,7 +170,7 @@
                 <div class="footer-grid">
                     <div class="footer-widget">
                         <a href="#hero-section" class="footer-logo-link">
-                            <img src="Logo xóa nền.png" alt="QREFM Lab Logo - White" class="footer-logo">
+                            <img src="images/Logo xóa nền.png" alt="QREFM Lab Logo - White" class="footer-logo">
                         </a>
                         <p>QREFM Lab is dedicated to pioneering quantitative research in economics and financial modeling, fostering innovation and academic excellence.</p>
                          <div class="social-icons">
@@ -144,7 +193,6 @@
                         <p>R.1109, A1 Building, NEU<br>Hanoi, Vietnam</p>
                         <p>Email: <a href="mailto:qrefm.lab@gmail.com">qrefm.lab@gmail.com</a></p>
                     </div>
-                    <!-- BỎ PHẦN WIDGET CHO NEWSLETTER -->
                 </div>
             </div>
         </div>
@@ -166,10 +214,7 @@
                 if (targetElement) {
                     let headerOffset = 86;
                     const headerElement = document.querySelector('header');
-                    if (headerElement) {
-                        headerOffset = headerElement.offsetHeight;
-                    }
-
+                    if (headerElement) { headerOffset = headerElement.offsetHeight; }
                     if (window.innerWidth <= 768) {
                          const mobileHeaderHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height-mobile')) || 121;
                          headerOffset = mobileHeaderHeight;
@@ -177,52 +222,32 @@
                          const desktopHeaderHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height-desktop')) || 86;
                          headerOffset = desktopHeaderHeight;
                     }
-
                     const elementPosition = targetElement.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                    window.scrollTo({
-                         top: offsetPosition,
-                         behavior: "smooth"
-                    });
+                    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
                 }
             });
         });
-
-        // Set current year in footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Active link highlighting on scroll
         const sections = document.querySelectorAll('section[id]');
         const navLi = document.querySelectorAll('header nav ul li a');
         const headerElementForScroll = document.querySelector('header');
-        
         window.addEventListener('scroll', () => {
             let current = '';
             let headerHeightForScrollCalculation = 86; 
-            if (headerElementForScroll) {
-                headerHeightForScrollCalculation = headerElementForScroll.offsetHeight;
-            }
-
+            if (headerElementForScroll) { headerHeightForScrollCalculation = headerElementForScroll.offsetHeight; }
             sections.forEach( section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - headerHeightForScrollCalculation - 50)) { 
-                    current = section.getAttribute('id');
-                }
+                if (pageYOffset >= (sectionTop - headerHeightForScrollCalculation - 50)) { current = section.getAttribute('id'); }
             });
-
             navLi.forEach( a => {
                 a.classList.remove('active');
-                if(a.getAttribute('href') && a.getAttribute('href').substring(1) === current) {
-                    a.classList.add('active');
-                }
+                if(a.getAttribute('href') && a.getAttribute('href').substring(1) === current) { a.classList.add('active'); }
             });
-            if (window.pageYOffset < sections[0].offsetTop - headerHeightForScrollCalculation - 50) {
+            if (window.pageYOffset < (sections[0] ? sections[0].offsetTop : 0) - headerHeightForScrollCalculation - 50) {
                 navLi.forEach(a => a.classList.remove('active'));
             }
         });
-
-        // BỎ SCRIPT CHO NEWSLETTER FORM
     </script>
 </body>
 </html>
