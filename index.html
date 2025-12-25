@@ -38,6 +38,7 @@
 
     <!-- MAIN CONTENT AREA -->
     <main class="container-main">
+        
         <!-- WHO WE ARE SECTION -->
         <section id="who-we-are" class="page-section">
             <div class="container">
@@ -68,24 +69,23 @@
             <div class="container">
                 <h2>Research Directions</h2>
                 <ul class="research-list">
-                    <!-- QUAN TRỌNG: Thêm style="background-image: url('images/your-image.jpg');" cho mỗi li -->
                     <li style="background-image: url('images/quant finance.png');">
-                        <span class="research-text">QUANTITATIVE FINANCE: PRICING, HEDGING,...</span>
+                        <span class="research-text">Quantitative Finance: Pricing, Hedging...</span>
                     </li>
                     <li style="background-image: url('images/market microstructure.png');">
-                        <span class="research-text">MARKET MICROSTRUCTURE MODELING</span>
+                        <span class="research-text">Market Microstructure Modeling</span>
                     </li>
                     <li style="background-image: url('images/game theory.jpeg');">
-                        <span class="research-text">DECISION-MAKING MODELS AND MODERN GAME THEORY</span>
+                        <span class="research-text">Decision-Making Models and Modern Game Theory</span>
                     </li>
                     <li style="background-image: url('images/mechanism design.png');">
-                        <span class="research-text">MECHANISM DESIGN AND BAYESIAN PERSUASION</span>
+                        <span class="research-text">Mechanism Design and Bayesian Persuasion</span>
                     </li>
                     <li style="background-image: url('images/climate economics.avif');">
-                        <span class="research-text">MACROECONOMICS INCORPORATING CLIMATE CHANGE AND UNCERTAINTY</span>
+                        <span class="research-text">Macroeconomics Incorporating Climate Change and Uncertainty</span>
                     </li>
                     <li style="background-image: url('images/neural network.avif');">
-                        <span class="research-text">MACHINE LEARNING IN COMPLEX ECONOMICS AND FINANCIAL MODELS</span>
+                        <span class="research-text">Machine Learning in Complex Economics and Financial Models</span>
                     </li>
                 </ul>
             </div>
@@ -97,44 +97,67 @@
                 <h2>News & Events</h2>
 
                 <div class="news-events-layout">
-                    <!-- CỘT TRÁI: CHO CÁC TIN TỨC CHI TIẾT -->
+                    <!-- CỘT TRÁI: CAROUSEL -->
                     <div class="main-news-column">
-                        
-                        <article class="news-detail-item">
-                            <!-- BỎ PHẦN NEWS-ITEM-IMAGE -->
-                            <div class="news-item-content">
-                                </p>
-                                <h3 class="news-item-title">
-                                    <a href="year_summary.html">Summary of QREFM Lab's seminar series - first year of operation</a>
-                                </h3>
-                                <p class="news-item-excerpt">
-                                    In its first year, QREFM Lab organized eight seminars across core research areas, laying a strong foundation for future work in quantitative economics 
-                                    and financial modeling.
-                                </p>
+                        <div class="news-carousel-container">
+                            
+                            <!-- SLIDE 1: Achievement -->
+                            <article class="news-detail-item news-slide active"> 
+                                <div class="news-item-content">
+                                    <div class="news-item-meta">
+                                        December 2025 | Achievement
+                                    </div>
+                                    <h3 class="news-item-title">
+                                        <a href="spde_competition.html">QREFM Lab Wins First Place at the Singular SPDE Learning Competition</a>
+                                    </h3>
+                                    <p class="news-item-excerpt">
+                                        QREFM Lab members Duy Anh and Dat Le, under the supervision of Dr. Vuong Van Yen, achieved First Prize in a global competition organized by UCL.
+                                    </p>
+                                </div>
+                                <a href="spde_competition.html" class="btn-read-more">Read More <span class="arrow">→</span></a>
+                            </article>
+
+                            <!-- SLIDE 2: Annual Report (ĐÃ SỬA LỖI HTML & FONT) -->
+                            <article class="news-detail-item news-slide"> 
+                                <div class="news-item-content">
+                                    <div class="news-item-meta">
+                                        December 2024 | Annual Report
+                                    </div> <!-- QUAN TRỌNG: Đã đóng thẻ div này -->
+                                    
+                                    <h3 class="news-item-title">
+                                        <!-- Đã sửa text thành chữ thường để CSS đồng bộ -->
+                                        <a href="year_summary.html">Summary of QREFM Lab's seminar series - First year of operation</a>
+                                    </h3>
+                                    <p class="news-item-excerpt">
+                                        In its first year, QREFM Lab organized eight seminars across core research areas, laying a strong foundation for future work.
+                                    </p>
+                                </div>
                                 <a href="year_summary.html" class="btn-read-more">Read More <span class="arrow">→</span></a>
+                            </article>
+
+                            <!-- Nút điều hướng -->
+                            <div class="carousel-navigation">
+                                <button class="nav-btn prev-btn" onclick="moveSlide(-1)" aria-label="Previous Slide">&#10094;</button>
+                                <button class="nav-btn next-btn" onclick="moveSlide(1)" aria-label="Next Slide">&#10095;</button>
                             </div>
-                        </article>
 
-                        <!-- Nếu không có bài nào khác, có thể để trống hoặc: -->
-                        <!-- <p>More news and event details will be updated here.</p> -->
+                        </div> 
+                    </div> 
 
-                    </div> <!-- Kết thúc .main-news-column -->
-
-                    <!-- CỘT PHẢI: SIDEBAR CHO BÀI VIẾT NỔI BẬT (TỔNG KẾT NĂM) -->
+                    <!-- CỘT PHẢI: SIDEBAR -->
                     <aside class="sidebar-news-column">
                         <article class="featured-article-sidebar">
-                            <!-- BỎ PHẦN FEATURED-ARTICLE-IMAGE-CONTAINER -->
                             <div class="featured-article-content">
-                                <h4>QREFM Lab Seminar Series</h4> <!-- Đổi tiêu đề này cho phù hợp -->
+                                <h4>QREFM Lab Seminar Series</h4>
                                 <p>
                                     QREFM Lab’s first-year seminar series showcased key research areas in quantitative economics and finance. View the detailed schedule.
                                 </p>
-                                <a href="seminar_series.html" class="btn btn-block">View Schedule</a> <!-- Đổi tên nút và link -->
+                                <a href="seminar_series.html" class="btn btn-block">View Schedule</a>
                             </div>
                         </article>
                     </aside>
 
-                </div> <!-- Kết thúc .news-events-layout -->
+                </div>
             </div>
         </section>
 
@@ -150,7 +173,7 @@
         </section>
     </main>
 
-    <!-- PRE-FOOTER / CALL TO ACTION SECTION -->
+    <!-- PRE-FOOTER / CALL TO ACTION -->
     <section class="pre-footer-cta">
         <div class="container">
             <div class="cta-content">
@@ -204,50 +227,110 @@
         </div>
     </footer>
 
+    <!-- SCRIPTS XỬ LÝ NAV & SCROLL (FIX LỖI BACK BUTTON) -->
     <script>
-        // Smooth scroll for anchor links
+        // 1. Hàm cuộn trang thông minh (Trừ đi chiều cao Header)
+        function handleScrollToAnchor() {
+            const hash = window.location.hash;
+            if (hash) {
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                    let headerOffset = 86; // Mặc định desktop
+                    const headerElement = document.querySelector('header');
+                    
+                    if (window.innerWidth <= 768) {
+                        headerOffset = 121; // Mobile
+                    } else if (headerElement) {
+                        headerOffset = headerElement.offsetHeight;
+                    }
+
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            }
+        }
+
+        // 2. Kích hoạt khi trang vừa tải xong (Fix lỗi khi bấm Back từ trang chi tiết)
+        window.addEventListener('load', () => {
+            // setTimeout nhỏ để chờ trình duyệt render xong
+            setTimeout(handleScrollToAnchor, 100);
+        });
+
+        // 3. Kích hoạt khi bấm vào Link menu (trong cùng 1 trang)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    let headerOffset = 86;
-                    const headerElement = document.querySelector('header');
-                    if (headerElement) { headerOffset = headerElement.offsetHeight; }
-                    if (window.innerWidth <= 768) {
-                         const mobileHeaderHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height-mobile')) || 121;
-                         headerOffset = mobileHeaderHeight;
-                    } else {
-                         const desktopHeaderHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height-desktop')) || 86;
-                         headerOffset = desktopHeaderHeight;
+                if (targetId !== "#") {
+                    history.pushState(null, null, targetId);
+                    
+                    // Gọi logic cuộn giống hệt hàm trên
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        let headerOffset = 86;
+                        const headerElement = document.querySelector('header');
+                        if (window.innerWidth <= 768) headerOffset = 121;
+                        else if (headerElement) headerOffset = headerElement.offsetHeight;
+
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
                     }
-                    const elementPosition = targetElement.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
                 }
             });
         });
+
+        // 4. Các script hiển thị năm và active menu
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
         const sections = document.querySelectorAll('section[id]');
         const navLi = document.querySelectorAll('header nav ul li a');
-        const headerElementForScroll = document.querySelector('header');
+        
         window.addEventListener('scroll', () => {
             let current = '';
-            let headerHeightForScrollCalculation = 86; 
-            if (headerElementForScroll) { headerHeightForScrollCalculation = headerElementForScroll.offsetHeight; }
+            let headerH = document.querySelector('header') ? document.querySelector('header').offsetHeight : 86;
+            
             sections.forEach( section => {
                 const sectionTop = section.offsetTop;
-                if (pageYOffset >= (sectionTop - headerHeightForScrollCalculation - 50)) { current = section.getAttribute('id'); }
+                if (pageYOffset >= (sectionTop - headerH - 50)) { 
+                    current = section.getAttribute('id'); 
+                }
             });
+            
             navLi.forEach( a => {
                 a.classList.remove('active');
-                if(a.getAttribute('href') && a.getAttribute('href').substring(1) === current) { a.classList.add('active'); }
+                if(a.getAttribute('href').includes(current) && current !== "") { 
+                    a.classList.add('active'); 
+                }
             });
-            if (window.pageYOffset < (sections[0] ? sections[0].offsetTop : 0) - headerHeightForScrollCalculation - 50) {
-                navLi.forEach(a => a.classList.remove('active'));
-            }
         });
+    </script>
+
+    <script>
+        // CAROUSEL LOGIC
+        let currentSlideIndex = 0;
+        const slides = document.getElementsByClassName("news-slide");
+
+        function moveSlide(n) {
+            showSlides(currentSlideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            if (n >= slides.length) {currentSlideIndex = 0}
+            if (n < 0) {currentSlideIndex = slides.length - 1}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slides[currentSlideIndex].classList.add("active");
+        }
     </script>
 </body>
 </html>
