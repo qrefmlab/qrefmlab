@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- HEADER & NAVIGATION (Giống như trang chủ) -->
     <header>
         <div class="container">
             <div class="logo">
                 <a href="index.html#hero-section">
-                    <img src="images/Logo bản trắng.png" alt="QREFM Lab Logo"> <!-- Đảm bảo đường dẫn đúng -->
+                    <img src="images/Logo bản trắng.png" alt="QREFM Lab Logo">
                 </a>
             </div>
             <nav>
@@ -27,29 +26,38 @@
         </div>
     </header>
 
-    <!-- ARTICLE DETAIL SECTION -->
     <main class="container-main article-page-section">
         <div class="container article-container">
+            <!-- ARTICLE HEADER: Cấu trúc chuẩn theo SPDE -->
             <header class="article-header">
                 <nav class="breadcrumbs" aria-label="breadcrumb">
                     <ol>
                         <li><a href="index.html">QREFM Lab</a></li>
                         <li><a href="index.html#news-events">News & Events</a></li>
-                        <li aria-current="page">Summary of Seminar Series – First Year</li>
+                        <li aria-current="page">Annual Report</li>
                     </ol>
                 </nav>
-                <h1 class="article-main-title">Summary of QREFM Lab's seminar series - First year of operation</h1>
+                <h1 class="article-main-title">Summary of QREFM Lab's Seminar Series - First Year of Operation</h1>
                 <p class="article-subtitle">
                     A look back at the key research directions and academic foundations established during the lab's inaugural year.
                 </p>
+                <!-- THÊM META DETAIL ĐỂ KHỚP BỐ CỤC -->
+                <div class="article-meta-detail">
+                    <p><span class="article-info"><strong>Date:</strong> December 2024</span></p>
+                    <p><span class="article-info"><strong>Category:</strong> Annual Report</span></p>
+                </div>
             </header>
 
             <figure class="article-featured-image">
                 <img src="images/year summary.jpg" alt="QREFM Lab Seminar Series Highlights">
+                <!-- Thêm caption nếu cần giống SPDE -->
+                <!-- <figcaption>Highlights from the first year</figcaption> -->
             </figure>
 
             <article class="article-content">
-                <p>In the first year, the Quantitative Research in Economics and Financial Modeling Lab (QREFM Lab) successfully hosted a series of in-depth seminars to introduce key research directions and establish a strong academic foundation for both lecturers and students. Led by Dr. Vuong Van Yen, Dr. Nguyen Van Quy, and Dr. Pham Thi Hien, students in QREFM Lab actively participated in QREFM Lab's academic and research activities. In total, QREFM Lab organized eight seminars focused on the following core research areas:</p>
+                <p>In the first year, the Quantitative Research in Economics and Financial Modeling Lab (QREFM Lab) successfully hosted a series of in-depth seminars to introduce key research directions and establish a strong academic foundation for both lecturers and students. Led by <strong>Dr. Vuong Van Yen</strong>, <strong>Dr. Nguyen Van Quy</strong>, and <strong>Dr. Pham Thi Hien</strong>, students in QREFM Lab actively participated in QREFM Lab's academic and research activities.</p>
+                
+                <p>In total, QREFM Lab organized eight seminars focused on the following core research areas:</p>
                 
                 <ul>
                     <li>
@@ -59,39 +67,31 @@
                         <strong>Market Microstructure:</strong> Topics include liquidity analysis, limit order books (LOBs), and mean-field games, with an emphasis on modeling and simulating market dynamics using advanced tools such as deep generative models.
                     </li>
                     <li>
-                        <strong>Mechanism Design and Information Economics:</strong> Exploring how mechanisms and incentives can be designed to optimize outcomes in various economic settings. Recent projects include Bayesian persuasion and strategic information disclosure, with published work “Auction design with heterogeneous priors” in <em>Games and Economic Behavior</em> (2024) - Dr Pham Thi Hien.
+                        <strong>Mechanism Design and Information Economics:</strong> Exploring how mechanisms and incentives can be designed to optimize outcomes in various economic settings. Recent projects include Bayesian persuasion and strategic information disclosure, with published work <em>“Auction design with heterogeneous priors”</em> in <em>Games and Economic Behavior</em> (2024) - Dr. Pham Thi Hien.
                     </li>
                     <li>
                         <strong>Microeconomic Theory and Choice Models:</strong> Investigating decision-making behavior through models such as homogeneous discount factors, Walrasian equilibrium, and choice functions with pre-order structures.
                     </li>
                     <li>
-                        <strong>Macroeconomic Modeling under Uncertainty:</strong> Studying dynamic macro models including the Ramsey model, Euler equations, and stochastic frameworks. The Lab also aims to integrate deep learning methods to analyze equilibrium states and paths, with plans for international publication.
+                        <strong>Macroeconomic Modeling under Uncertainty:</strong> Studying dynamic macro models including the Ramsey model, Euler equations, and stochastic frameworks. The Lab also aims to integrate deep learning methods to analyze equilibrium states and paths.
                     </li>
                     <li>
-                        <strong>Machine Learning Applications in Economics and Finance:</strong> Introducing and applying machine learning tools (e.g., neural solvers) to solve complex economic models and enhance computational efficiency.
+                        <strong>Machine Learning Applications:</strong> Introducing and applying machine learning tools (e.g., neural solvers) to solve complex economic models and enhance computational efficiency.
                     </li>
                     <li>
-                        <strong>Environmental Economics and Policy Design:</strong> Analyzing instruments such as emission taxes and their role in shaping sustainable economic behavior, combining theory with policy relevance.
+                        <strong>Environmental Economics:</strong> Analyzing instruments such as emission taxes and their role in shaping sustainable economic behavior, combining theory with policy relevance.
                     </li>
                 </ul>
                 
                 <p>The first-year seminar series has laid a strong foundation for QREFM Lab’s future in quantitative research in economics and financial modeling.</p>
-                
-                <!-- Bạn có thể thêm các đoạn văn hoặc tiêu đề phụ khác nếu cần -->
-                <!-- Ví dụ:
-                <h2>Impact and Future Outlook</h2>
-                <p>The seminars not only provided valuable knowledge but also fostered a collaborative research environment... Future plans include expanding the series to include external speakers and more hands-on workshops...</p>
-                -->
             </article>
 
             <div class="article-footer">
                 <a href="index.html#news-events" class="btn btn-secondary"><span class="arrow">←</span> Back to News & Events</a>
             </div>
-
-        </div> <!-- End .article-container -->
+        </div> 
     </main>
 
-    <!-- FOOTER (Giống như trang chủ) -->
     <footer>
         <div class="footer-main">
             <div class="container">
@@ -133,7 +133,6 @@
     </footer>
 
     <script>
-        // Set current year in footer
         const currentYearSpan = document.getElementById('currentYear');
         if(currentYearSpan) {
            currentYearSpan.textContent = new Date().getFullYear();
