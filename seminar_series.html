@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Thêm style riêng cho bảng seminar nếu cần, hoặc đặt trong style.css */
+        /* Style riêng cho bảng, giữ nguyên để không ảnh hưởng style.css chung */
         .seminar-schedule-table {
             width: 100%;
             margin-top: 30px;
@@ -26,17 +26,13 @@
             font-weight: 600;
             color: var(--text-primary);
         }
-        .seminar-schedule-table td:first-child, /* Cột # */
-        .seminar-schedule-table td:nth-child(2) { /* Cột Date */
-            white-space: nowrap; /* Ngăn ngày bị xuống dòng */
-        }
-        .seminar-schedule-table tr:nth-child(even) td {
-            /* background-color: #f9f9f9; */ /* Màu xen kẽ cho các dòng nếu muốn */
+        .seminar-schedule-table td:first-child,
+        .seminar-schedule-table td:nth-child(2) {
+            white-space: nowrap;
         }
     </style>
 </head>
 <body>
-    <!-- HEADER & NAVIGATION (Giống như trang chủ) -->
     <header>
         <div class="container">
             <div class="logo">
@@ -55,28 +51,33 @@
         </div>
     </header>
 
-    <!-- ARTICLE DETAIL SECTION -->
     <main class="container-main article-page-section">
         <div class="container article-container">
+            <!-- ARTICLE HEADER: Chuẩn hóa theo SPDE -->
             <header class="article-header">
                 <nav class="breadcrumbs" aria-label="breadcrumb">
                     <ol>
                         <li><a href="index.html">QREFM Lab</a></li>
                         <li><a href="index.html#news-events">News & Events</a></li>
-                        <li aria-current="page">QREFM Lab Seminar Series Schedule</li>
+                        <li aria-current="page">Seminar Schedule</li>
                     </ol>
                 </nav>
                 <h1 class="article-main-title">QREFM Lab Seminar Series</h1>
                 <p class="article-subtitle">
                     Detailed schedule of our regular scientific activities, fostering academic exchange and research development.
                 </p>
-                <div class="article-meta-detail"> <!-- Sử dụng div để nhóm thông tin meta -->
+                <div class="article-meta-detail">
                     <p><span class="article-info"><strong>Time:</strong> 3:00 PM, Fridays weekly</span></p>
                     <p><span class="article-info"><strong>Location:</strong> Room 1109 - A1 Building - NEU</span></p>
                 </div>
             </header>
-
-            <!-- Bỏ <figure class="article-featured-image"> nếu không có ảnh nổi bật cho trang này -->
+            
+            <!-- Phần ảnh bị ẩn, nếu muốn hiện thì bỏ comment, cấu trúc đã chuẩn -->
+            <!-- 
+            <figure class="article-featured-image">
+                <img src="images/seminar_cover.jpg" alt="Seminar Series">
+            </figure> 
+            -->
 
             <article class="article-content">
                 <p>The QREFM Lab hosts a regular seminar series designed to introduce key research directions, present ongoing work, and discuss foundational concepts in quantitative economics and financial modeling. These sessions are a cornerstone of our lab's commitment to building a vibrant academic community for both lecturers and students.</p>
@@ -141,7 +142,6 @@
                             <td>Deep Reinforcement Learning in a Monetary Model</td>
                             <td>Nguyễn Tuệ Anh, Trần Ngọc Khánh Linh</td>
                         </tr>
-                        <!-- Thêm các seminar tương lai vào đây -->
                     </tbody>
                 </table>
 
@@ -151,11 +151,9 @@
             <div class="article-footer">
                 <a href="index.html#news-events" class="btn btn-secondary"><span class="arrow">←</span> Back to News & Events</a>
             </div>
-
-        </div> <!-- End .article-container -->
+        </div> 
     </main>
 
-    <!-- FOOTER (Giống như trang chủ) -->
     <footer>
         <div class="footer-main">
             <div class="container">
@@ -197,7 +195,6 @@
     </footer>
 
     <script>
-        // Set current year in footer
         const currentYearSpan = document.getElementById('currentYear');
         if(currentYearSpan) {
            currentYearSpan.textContent = new Date().getFullYear();
